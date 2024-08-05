@@ -1,0 +1,105 @@
+.navbar-c{
+    width: 100%;
+    height: 90px;
+    background-color:#121619;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-c .nav-left{
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 125px;    
+}
+
+.navbar-c .nav-left img{
+    width: 70px;
+}
+
+.navbar-c .nav-right{
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-c a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navbar-c .nav-right button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-c #open {
+    padding-left: 0px;
+  }
+
+  .navbar-c #open img {
+    display: none;
+  }
+  
+  .navbar-c #close img {
+    display: inherit;
+  }
+  
+  .navbar-c #open .hidden-links {
+    display: inherit;
+    margin-left: 30px;
+  }
+  
+  .navbar-c #close .hidden-links {
+    display: none;
+  }
+  
+  .navbar-c #open a {
+    width: 70px;
+    margin: 5px;
+  }
+
+  .navbar-c .nav-right svg {
+    font-size: 40px;
+  }
+
+@media only screen and (max-width: 900px) {
+    .navbar-c .nav-right a {
+      width: 70px;
+    }
+    .navbar-c .nav-left {
+      padding-left: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .navbar-c .nav-right button {
+      display: none;
+    }
+  
+    .hidden-links {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .navbar-c .nav-right a {
+      display: none;
+    }
+  
+    .navbar-c .nav-right {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .navbar-c .nav-right button {
+      display: inherit;
+    }
+  }
+  
